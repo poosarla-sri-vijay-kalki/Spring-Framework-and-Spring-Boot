@@ -6,7 +6,9 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<bean id ="alien" class="com.spring.springDemo.Alien">
-		<property name="age" value="10"></property>
+		<!-- <property name="age" value="10"></property>  - setter injection-->
+		<constructor-arg value="12"></constructor-arg>
+		<constructor-arg value="13"></constructor-arg>
 		 <!-- when even ever a property is added the corresponding set method is called.-->
 		 <property name="lap" ref="lap1"></property>
 	</bean>

@@ -6,7 +6,11 @@ public class Alien {
 	public Alien() {
 		System.out.println("alien object created");
 	}
-	
+	public Alien(int age, int dup) {
+		this.age = age;
+		System.out.println("age = "+age);
+		System.out.println("dup ="+dup);
+	}
 	public int getAge() {
 		return age;
 	}
