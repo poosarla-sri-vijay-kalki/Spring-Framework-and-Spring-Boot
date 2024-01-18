@@ -5,7 +5,12 @@ xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
-	<bean id ="alien" class="com.spring.springDemo.Alien" scope="prototype">
+	<bean id ="alien" class="com.spring.springDemo.Alien">
 		<property name="age" value="10"></property>
+		 <!-- when even ever a property is added the corresponding set method is called.-->
+		 <property name="lap" ref="lap1"></property>
+	</bean>
+	
+	<bean id="lap1" class="com.spring.springDemo.Laptop">
 	</bean>
 </beans>
