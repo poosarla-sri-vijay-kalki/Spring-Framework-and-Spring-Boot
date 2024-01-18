@@ -14,8 +14,8 @@ public class App
     {
     	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml"); 
     	// when ClassPathXmlApplicationContext is used it will search for the input file in the class path
-    	Alien obj1 = (Alien) context.getBean("alien");
-    	obj1. code();
+    	Alien obj1 = (Alien) context.getBean("alien"); 
+     	obj1. code();
     	
 
     }

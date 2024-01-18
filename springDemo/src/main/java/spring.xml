@@ -5,7 +5,7 @@ xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
-	<bean id ="alien" class="com.spring.springDemo.Alien" autowire="byName">
+	<bean id ="alien" class="com.spring.springDemo.Alien" autowire="byType">
 		<property name="age" value="10"></property>  <!--  setter injection-->
 		<!--<constructor-arg value="12"></constructor-arg>
 		<constructor-arg value="13"></constructor-arg> -->
@@ -20,5 +20,5 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	</bean>
 	
 	
-	<bean id ="desktop" class="com.spring.springDemo.Desktop"></bean>
+	<bean id ="desktop" class="com.spring.springDemo.Desktop" primary ="true"></bean>
 </beans>
