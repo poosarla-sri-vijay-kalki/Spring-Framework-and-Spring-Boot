@@ -2,15 +2,15 @@ package com.spring.springDemo;
 
 public class Alien {
 	private int age;
-	private Laptop lap;
+	private Computer com;
 	public Alien() {
 		System.out.println("alien object created");
 	}
-	public Alien(int age, int dup) {
-		this.age = age;
-		System.out.println("age = "+age);
-		System.out.println("dup ="+dup);
-	}
+//	public Alien(int age, int dup) {
+//		this.age = age;
+//		System.out.println("age = "+age);
+//		System.out.println("dup ="+dup);
+//	}
 	public int getAge() {
 		return age;
 	}
@@ -19,17 +19,15 @@ public class Alien {
 		this.age = age;
 		System.out.println("age is set");
 	}
-	
-	public Laptop getLap() {
-		return lap;
-	}
 
-	public void setLap(Laptop lap) {
-		this.lap = lap;
+	public Computer getCom() {
+		return com;
 	}
-
+	public void setCom(Computer com) {
+		this.com = com;
+	}
 	public void code() {
 		System.out.println("hello");
-		lap.compile();
+		com.compile();
 	}
 }
